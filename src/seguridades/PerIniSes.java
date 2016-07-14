@@ -154,7 +154,7 @@ public class PerIniSes extends javax.swing.JFrame {
     }//GEN-LAST:event_butAceActionPerformed
 
     private void txtUsrFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsrFocusGained
-        txtUsr.selectAll();
+        //txtUsr.selectAll();
     }//GEN-LAST:event_txtUsrFocusGained
 
     private void pwdClaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_pwdClaFocusGained
