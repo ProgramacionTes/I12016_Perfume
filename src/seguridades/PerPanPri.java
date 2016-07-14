@@ -242,7 +242,7 @@ public class PerPanPri extends javax.swing.JFrame
     }//GEN-LAST:event_mnuArcLogIngSisActionPerformed
 
     private void mnuMaePerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuMaePerActionPerformed
-        maestros.PerMaePer objMaePer=new maestros.PerMaePer();
+        teacher.PerMaePer objMaePer=new teacher.PerMaePer();
         dskGen.add(objMaePer, JLayeredPane.DEFAULT_LAYER);
         objMaePer.setVisible(true);
     }//GEN-LAST:event_mnuMaePerActionPerformed

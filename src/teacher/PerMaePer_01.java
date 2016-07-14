@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package maestros;
+package teacher;
 import java.util.Vector;
 import javax.swing.ListSelectionModel;
 
@@ -44,21 +44,23 @@ public class PerMaePer_01 extends javax.swing.JDialog
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        lstMar = new javax.swing.JList<>();
+        lstMar = new javax.swing.JList<String>();
         lblImgMar = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
         butAce = new javax.swing.JButton();
         butCan = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Marcas");
 
         jScrollPane1.setPreferredSize(new java.awt.Dimension(150, 130));
 
-        lstMar.setModel(new javax.swing.AbstractListModel<String>() {
+        lstMar.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+            public Object getElementAt(int i) { return strings[i]; }
         });
         lstMar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -83,6 +85,9 @@ public class PerMaePer_01 extends javax.swing.JDialog
         jPanel1.setPreferredSize(new java.awt.Dimension(484, 40));
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
+        jButton2.setText("jButton2");
+        jPanel1.add(jButton2);
+
         butAce.setText("Aceptar");
         butAce.setPreferredSize(new java.awt.Dimension(100, 30));
         butAce.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +107,9 @@ public class PerMaePer_01 extends javax.swing.JDialog
         jPanel1.add(butCan);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.SOUTH);
+
+        jButton1.setText("jButton1");
+        getContentPane().add(jButton1, java.awt.BorderLayout.LINE_END);
 
         setSize(new java.awt.Dimension(500, 300));
         setLocationRelativeTo(null);
@@ -178,6 +186,8 @@ public class PerMaePer_01 extends javax.swing.JDialog
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton butAce;
     private javax.swing.JButton butCan;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblImgMar;

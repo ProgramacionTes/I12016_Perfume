@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package maestros;
+package teacher;
 
 import javax.swing.JOptionPane;
 
@@ -45,7 +45,7 @@ public class PerMaePer extends javax.swing.JInternalFrame
         txtNom = new javax.swing.JTextField();
         txtMar = new javax.swing.JTextField();
         butMar = new javax.swing.JButton();
-        cboTip = new javax.swing.JComboBox<>();
+        cboTip = new javax.swing.JComboBox<String>();
         optFraDam = new javax.swing.JRadioButton();
         optFraCab = new javax.swing.JRadioButton();
         optFraUni = new javax.swing.JRadioButton();
@@ -82,7 +82,7 @@ public class PerMaePer extends javax.swing.JInternalFrame
             }
         });
 
-        cboTip.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cboTip.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         bgrFra.add(optFraDam);
         optFraDam.setSelected(true);
