@@ -159,6 +159,7 @@ public class PerIniSes extends javax.swing.JFrame {
 
     private void pwdClaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_pwdClaFocusGained
        // pwdCla.selectAll();
+        System.err.println("hola");
     }//GEN-LAST:event_pwdClaFocusGained
 
     private void txtUsrKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsrKeyPressed
